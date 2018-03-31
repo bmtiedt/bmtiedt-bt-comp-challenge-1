@@ -1,23 +1,28 @@
+body {
+}
+
+main {
+display: flex;
+background-image: none;
+background-color: transparent;
+}
+
 .left-side-main-section {
+  /* display: flex; */
   border: 0;
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 3, 1fr;
   height: 100vh;
-  width: 50%;  
-  grid-template-areas: 
+  width: 60%;
+  grid-template-areas:
             "gi1 gi1 gi2"
             "gi3 gi4 gi5"
             "gi6 gi7 gi8";
 }
 
-/*nav {
-  display: inline-block;
-  width: 100%;
-}*/
-
 #a1 {
-  background-color: teal;
+  background-color: #6DECFF;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -25,7 +30,14 @@
   grid-area:  gi1;}
 
 #a2 {
-  background-color: aqua;
+  background-color: #57BDCC;
+  background-position: 50%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-experience.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 3;
@@ -34,7 +46,14 @@
 }
 
 #a3 {
-  background-color: gray;
+  background-color: #BAF6FF;
+  background-position: 50%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-social.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -43,7 +62,11 @@
 }
 
 #a4 {
-  background-color: aquamarine;
+  background-color: #6DAEDB;
+  background-position: 50%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-education.png");
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -52,7 +75,11 @@
 }
 
 #a5 {
-  background-color: red;
+  background-color: #2EC0F9;
+  background-position: 50%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-contact.png");
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -61,7 +88,11 @@
 }
 
 #a6 {
-  background-color: green;
+  background-color: #63ADF2;
+  background-position: 50%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-profile.png");
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -70,7 +101,11 @@
 }
 
 #a7 {
-  background-color: yellow;
+  background-color: #1D70A2;
+  background-position: 50%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-blog.png");
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -79,18 +114,24 @@
 }
 
 #a8 {
-  background-color: orange;
+  background-color: #58C3E8;
+  background-position: 50%;
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-potfolio.png");
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 3;
   grid-area: gi8;
+  height: auto;
+  width: auto;
 }
-
 .right-side-main-picture {
-  background: blue;
-  display: inline-grid;
-  height: 100vh;
-  
-  width: 39%;
+  border: 3px solid black;
+  background-image: url("../images/hoodieMan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 40%;
 }
